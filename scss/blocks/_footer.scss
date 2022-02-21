@@ -1,0 +1,78 @@
+.footer {
+
+  &__privacy {
+    background-color: $footerPrivacy;
+    
+  }
+}
+.policy {
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 55px;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+    min-height: 28px; //?????
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 140%;
+    color: $whiteColor;
+    opacity: 0.4;
+    a {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__information {
+    flex: 0 1 auto;
+  }
+  &__public-offer {
+    flex: 0 0 119px;
+    
+  }
+  &__privacy-policy {
+    flex: 0 0 201px;
+  }
+}
+
+//==================================================================================
+
+@media (max-width: 1200px) {
+
+}
+
+//Tablet
+@media (max-width: 991.98px) { //дробные значения так как на целом значении может примениться другие правила
+
+}
+
+// Mobile
+@media (max-width: 767.98px) {
+  .policy {
+    &__container {
+      justify-content: start;
+      flex-wrap: wrap;
+    }
+    &__information {
+      width: 100%;
+      padding-bottom: 24px;
+    }
+    &__public-offer {
+      width: 50%;
+      
+    }
+    &__privacy-policy {
+      width: 50%;
+    }
+  }
+}
+
+// MobileSmall
+@media (max-width: 479.98px) {
+
+}
