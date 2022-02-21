@@ -1,0 +1,122 @@
+//@use 'sass:math'; // подключение математического модуля
+
+// Переменные ==============================
+@import "base/variables";
+// Миксины ==============================
+/* @import "base/mixins"; */
+
+
+// Подключение шрифтов
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/Oswald-Bold.woff2') format('woff2'),
+       url('../fonts/Oswald-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+//=========================== FONT ===========================
+
+$fontFamily: "Montserrat";
+$fontSize: 16px;
+
+//=========================== WIDTH ===========================
+
+$minWidth: 320px; // Минимальная ширина страницы
+$maxWidth: 1440px; // Ширина макета
+$maxWidthContainer: 1200px; // Если есть контейнер, то добавить 30px отступы безопасности
+
+// Обнуление и общие параметры ==============================
+@import "base/reset";
+
+html,
+body {
+  height: 100%;
+	min-width: $minWidth;
+}
+
+body {
+  color: $mainColor;
+	line-height: 1;
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	// Скролл заблокирован
+	.lock & {
+		overflow: hidden;
+		touch-action: none;
+	}
+	// Сайт загружен
+/* 	.loaded & {
+	} */
+}
+
+// Оболочка =======================================================================
+.wrapper {
+	min-height: 100%; // минимум всю высоту окна
+	display: flex;
+	flex-direction: column;
+	overflow: hidden; // Контент обрезается, без предоставления прокрутки.
+	// Прижимаем footer
+	> main {
+		flex: 1 1 auto; // можно расширяться 
+	}
+	// Фикс для слайдеров
+	> * {
+		min-width: 0;
+	}
+}
+
+// container ==================================================================================
+
+[class*="__container"] {
+  max-width: $maxWidthContainer;
+	box-sizing: content-box;
+	margin: 0 auto;
+  padding: 0 15px;
+}
+
+//PC
+@media (max-width: 1200px) {
+  [class*="__container"] {
+    max-width: 970px;
+  }
+}
+
+//Tablet
+@media (max-width: 991.98px) { //дробные значения так как на целом значении может примениться другие правила
+  [class*="__container"] {
+    max-width: 750px;
+  }
+}
+
+// Mobile
+@media (max-width: 767.98px) {
+  [class*="__container"] {
+    max-width: none;
+  }
+}
+
+// MobileSmall
+@media (max-width: 479.98px) {
+  [class*="__container"] {
+    max-width: none;
+  }
+}
+
+//======================================================
+
+// Подключение стилей общих элементов проекта
+@import "base/common";
+
+
+// Подключение стилей отдельных блоков
+@import "blocks/main";
+@import "blocks/header";
+@import "blocks/footer";
+
+// Подключение стилей отдельных страниц
+//@import "home";
+
