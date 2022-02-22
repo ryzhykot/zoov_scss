@@ -43,6 +43,7 @@ body {
 	line-height: 1;
 	font-family: $fontFamily;
 	font-size: $fontSize;
+  background-color: $whiteColor;
 	// Скролл заблокирован
 	.lock & {
 		overflow: hidden;
@@ -116,6 +117,12 @@ body {
 @import "blocks/main";
 @import "blocks/header";
 @import "blocks/footer";
+@import "blocks/barf";
+@import "blocks/ration";
+@import "blocks/why";
+@import "blocks/concern";
+@import "blocks/get";
+@import "blocks/spoiler";
 
 // Подключение стилей отдельных страниц
 //@import "home";

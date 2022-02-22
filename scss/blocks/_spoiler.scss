@@ -1,0 +1,59 @@
+.spoiler {
+  padding-bottom: 180px;
+  &__container {
+  }
+}
+.spoiler-block {
+  display: flex;
+  column-gap: 76px;
+  flex-wrap: wrap;
+  &__left {
+    flex: 1 0 348px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__right {
+    flex: 1 0 766px;
+  }
+
+  &__item {
+    border-bottom: 1px solid $mainBackgroundColor;
+    margin-bottom: 32px;
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+  }
+
+  &__button {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: $blackColor;
+    width: 100%;
+    text-align: start;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      width: 20px;
+      height: 2px;
+      background-color: $buttonColor;
+      position: absolute;
+      top: 12px;
+      right: 10px;
+      transition: transform 0.3s ease 0s;
+    }
+  }
+
+  &__text {
+    line-height: 140%;
+    max-width: 691px;
+    margin: 22px 0 32px;
+  }
+}
+.title {
+}

@@ -66,6 +66,8 @@
     background-color: transparent;
     &:hover {
       background-color:$secondBackgroundColor;
+      border: 1px solid $secondBackgroundColor;
+
     }
   }
   &--send {
