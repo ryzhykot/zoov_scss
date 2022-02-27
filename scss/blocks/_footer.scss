@@ -60,6 +60,8 @@
     background-color: $footerPrivacy;
   }
   &-question {
+    flex: 1 1 auto;
+    padding-top: 30px;
 
 		&__title {
       //padding-top: 23px;
@@ -76,7 +78,7 @@
 }
 .form {
   max-width: 636px;
-  max-height: 256px;
+  //max-height: 256px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
@@ -201,9 +203,19 @@
   .footer__wrapper {
     flex-wrap: wrap;
     column-gap: 150px;
+    margin-bottom: 242px;
   }
   .footer__subtitle--instagram {
     margin-bottom: 56px;
+  }
+  .footer-contacts {
+    flex: 1 1 auto;
+  }
+  .form {
+    max-width: 100%;
+  }
+  .footer-question {
+    padding-top: 0;
   }
 }
 

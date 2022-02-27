@@ -16,7 +16,7 @@
   }
 
   &__right {
-    flex: 1 0 766px;
+    flex: 1 1 auto;
   }
 
   &__item {
@@ -36,6 +36,7 @@
     width: 100%;
     text-align: start;
     position: relative;
+    padding-right: 53px;
     &::before,
     &::after {
       content: "";

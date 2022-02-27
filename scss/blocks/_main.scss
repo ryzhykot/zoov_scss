@@ -2,7 +2,8 @@
   &-page {
     background: center / cover no-repeat url(../img/main_bgi.jpg);
     z-index: 5;
-    height: 100vh;
+    //height: 100vh;
+    //min-height: 540px;
     &::before {
       content: "";
       background: center / auto 100% no-repeat url(../img/zooo_beefor.svg);
@@ -15,6 +16,7 @@
     &__container {
       display: flex;
       align-items: center;
+      min-height: 600px;
       height: 100vh;
       //padding-top: 112px;
       //padding-bottom: 112px;

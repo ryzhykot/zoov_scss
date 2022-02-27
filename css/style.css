@@ -260,7 +260,6 @@ body {
 .main-page {
   background: center/cover no-repeat url(../img/main_bgi.jpg);
   z-index: 5;
-  height: 100vh;
 }
 
 .main-page::before {
@@ -280,6 +279,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 600px;
   height: 100vh;
 }
 
@@ -668,6 +668,13 @@ body {
   background-color: #69120E;
 }
 
+.footer-question {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding-top: 30px;
+}
+
 .footer-question__title {
   font-weight: 600;
   font-size: 20px;
@@ -681,7 +688,6 @@ body {
 
 .form {
   max-width: 636px;
-  max-height: 256px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -821,9 +827,21 @@ body {
         flex-wrap: wrap;
     -webkit-column-gap: 150px;
             column-gap: 150px;
+    margin-bottom: 242px;
   }
   .footer__subtitle--instagram {
     margin-bottom: 56px;
+  }
+  .footer-contacts {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+  .form {
+    max-width: 100%;
+  }
+  .footer-question {
+    padding-top: 0;
   }
 }
 
@@ -1297,8 +1315,8 @@ body {
 
 .spoiler-block__right {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 766px;
-          flex: 1 0 766px;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .spoiler-block__item {
@@ -1319,6 +1337,7 @@ body {
   width: 100%;
   text-align: start;
   position: relative;
+  padding-right: 53px;
 }
 
 .spoiler-block__button::before, .spoiler-block__button::after {
