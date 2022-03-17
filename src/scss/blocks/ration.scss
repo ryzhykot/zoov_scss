@@ -1,0 +1,242 @@
+.ration {
+  padding-top: 180px;
+  @media (max-width:$tablet){
+    padding-top: 80px;
+  }
+
+  &-calculate {
+    position: relative;
+    background-color: $secondBackgroundColor;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
+    //min-height: 184px;
+    padding: 63px 121px 63px 0;
+    @media (max-width:$mobile){
+      justify-content: center;
+      padding: 30px 25px;
+    }
+    &__title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 140%;
+      text-align: center;
+      letter-spacing: 0.02em;
+      margin-bottom: 25px;
+      @media (min-width:$mobile){
+        display: none; 
+      }
+    }
+    &__button {
+      display: inline-block;
+      text-align: center;
+      z-index: 2;
+      @media (max-width:$mobile){
+      }
+    }
+    &::before{
+      content:'';
+      top: 0;
+      left: 0;
+      position: absolute;
+      background: url(../img/ration-calculate__bgi.svg) left / 100% auto no-repeat;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      @media (max-width:$pc){
+        background-size: 120% auto;
+      }
+      @media (max-width:$tablet){
+        background-size: 168% auto;
+        background-position: 97% 23%;
+      }
+      @media (max-width:$mobile){
+        background-size: 189% auto;
+        background-position: 97% 21%;
+      }
+      @media (max-width:$mobileSmall){
+        min-width: 499px;
+        background-size: 300% auto;
+        background-position: 71% -362%;
+      }
+    }
+  }
+}
+
+.title-group {
+  display: flex;
+  align-items: center;
+  column-gap: 62px;
+  margin-bottom: 74px;
+  &__title {
+    flex: 0 0 auto;
+  }
+  &__description {
+    flex: 0 1 auto;
+    line-height: 140%;
+    @media (max-width:$tablet){
+      display: none;
+    }
+  }
+}
+
+// TABS ==================================================================================
+
+.ration-tabs {
+
+  &__navigation {
+    display: flex;
+    margin-bottom: 60px;
+    @media (max-width:$mobileSmall){
+      width: 100%;
+    }
+  }
+
+  &__title {
+    padding: 10px 42px;
+    color: $buttonColor;
+    border: 1px solid $buttonColor;
+    background-color: transparent;
+    &:hover {
+      box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    }
+    &._tab-active {
+      color: $whiteColor;
+      background-color: $buttonColor;
+      &:hover {
+        box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+      }
+    }
+    &-left {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-right: none;
+      @media (max-width:$mobileSmall){
+        flex: 0 1 50%;
+      }
+    }
+    &-right {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-left: none;
+      @media (max-width:$mobileSmall){
+        flex: 0 1 50%;
+      }
+    }
+    @media (max-width:$mobileSmall){
+      padding: 5px 12px;
+    }
+
+  }
+
+  &__content {
+    padding-bottom: 80px;
+    @media (max-width:$mobile){
+      padding-bottom: 100px;
+    }
+  }
+}
+
+
+.cards-ration {
+  width: 100%;
+  position: relative;
+  &__body {
+    display: none;
+      &._tab-active {
+        display: flex;
+        //justify-content: space-between;
+        //column-gap: 20px;
+      }
+  }
+}
+.card-ration {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  //flex: 0 0 280px;
+  //max-width: 280px;
+  
+  &__image {
+    max-width: 100%;
+    height: 335px;
+    margin-bottom: 45px;
+    cursor: pointer;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  &__subtitle,
+  &__subdescription {
+    font-size: 13px;
+    line-height: 130%;
+    color: #9F9E9D;
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 11px;
+    color: #434242;
+    
+  }
+
+  &__subdescription {
+    margin-bottom: 24px;
+  }
+}
+
+// SLIDER==================================================================================
+
+.ration-slider {
+  position: relative;
+  //height: 598px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+
+/*   .swiper-pagination {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, 0px);
+    transition: 300ms opacity;
+    z-index: 10;
+    &-bullet {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #961914;
+      opacity: 0.2;
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+      &-active {
+        opacity: 1;
+      }
+    }
+  } */
+
+}
+.ration-slider__wrapper.swiper-wrapper{
+  position: relative;
+  width: 100%;
+}
+
+.ration-slider__slide {
+  flex-shrink: 0; //!!!!!!!!!!!!!!!!!!
+  width: 100%;
+  height: 100%;
+}
+
+

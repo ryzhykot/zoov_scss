@@ -1,0 +1,352 @@
+.footer {
+  background-color: $buttonColor;
+  position: relative;
+  &::after{
+    content:'';
+      background: url(../img/footer/footer-right.svg) no-repeat;
+      position: absolute;
+      width: 300px;
+      height: 320px;
+      top: 0;
+      right: -150px;
+      z-index: 1;
+      @media (max-width:$pc){
+        top: -45px;
+        right: -185px;
+        z-index: 1;
+        background-size: 57%; 
+      }
+      @media (max-width:$tablet){
+        top: -49px;
+        right: -205px;
+        z-index: 1;
+        background-size: 46%;
+      }
+      @media (max-width:$mobile){
+        top: -80px;
+        right: -203px;
+        z-index: 1;
+        background-size: 49%; 
+      }
+  }
+  &__wrapper {
+    display: flex;
+    column-gap: 187px;
+    padding-top: 80px;
+    margin-bottom: 80px;
+    color:$whiteColor;
+    @media (max-width:$pc){
+      column-gap: 10%;
+    }
+    @media (max-width:$mobile){
+      padding-top: 56px;
+    }
+  }
+
+  &-contacts {
+    flex: 0 0 302px;
+    z-index: 10;
+    position: relative;
+    &::before{
+      content:'';
+      background: url(../img/footer/footer-dog.svg) no-repeat;
+      position: absolute;
+      width: 97px;
+      height: 97px;
+      top: 8px;
+      left: 309px;
+      z-index: 1;
+      @media (max-width:$tablet){
+        left: 278px; 
+      }
+      @media (max-width:$mobile){
+        top: 147px;
+        left: 210px; 
+      }
+    
+    }
+    &::after{
+      content:'';
+      background: url(../img/footer/footer-meat.svg) no-repeat;
+      position: absolute;
+      width: 130px;
+      height: 151px;
+      top: 145px;
+      left: 250px;
+      z-index: 1;
+      @media (max-width:$tablet){
+        left: 220px;
+      }
+      @media (max-width:$mobile){
+        left: 360px;
+        top: 341px;
+        background-size: 67%;
+      }
+      @media (max-width:$mobileSmall){
+        left: 228px;
+        top: 379px;
+        background-size: 67%;
+      }
+    }
+    @media (max-width:$pc){
+       flex: 1 1 40%;
+        
+    }
+		&__title {
+      margin-bottom: 8px;
+		}
+
+		&__subtitle {
+      font-size: 16px;
+      line-height: 140%;
+      margin-bottom: 32px;
+		}
+  }
+
+	&__phone {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 140%;
+	}
+
+  &__button-group {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    max-width: 223px;
+    margin: 24px 0 40px;
+  }
+
+  &__button {
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    img {
+      margin-right: 8px;
+    }
+  }
+
+  a.footer__instagram {
+    text-decoration: underline;
+    line-height: 140%;
+  }
+
+  &__privacy {
+    background-color: $footerPrivacy;
+  }
+  &-question {
+    flex: 1 1 auto;
+    padding-top: 30px;
+    z-index: 10;
+    position: relative;
+    &::before{
+      content:'';
+      background: url(../img/footer/footer-apple.svg) no-repeat;
+      position: absolute;
+      width: 91px;
+      height: 92px;
+      bottom: -50px;
+      right: -50px;
+      z-index: 1;
+      @media (max-width:$pc){
+        right: -108px; 
+      }
+      @media (max-width:$mobile){
+        left: 40px;
+        bottom: -150px; 
+      }
+    }
+    @media (max-width:$pc){
+      flex: 1 1 50%;
+       
+   }
+		&__title {
+      //padding-top: 23px;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 140%;
+      margin-bottom: 4px;
+		}
+
+    &__subtitle {
+      margin-bottom: 34px;
+    }
+  }
+}
+.form {
+  max-width: 636px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &-group__input {
+    display: flex;
+    flex: 1 1 100%;
+    column-gap: 25px;
+    @media (max-width:$tablet){
+      flex-wrap: wrap;
+    }
+  }
+
+
+  &__textarea,
+  &__input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.6);
+    outline: none;
+  }
+  &__input {
+    flex: 0 1 50%;
+    max-height: 48px;
+    padding: 14px 80px 14px 14px;
+    margin-bottom: 16px;
+    @media (max-width:$tablet){
+      flex: 1 1 100%;
+      
+    }
+    }
+  &__textarea {
+    flex: 1 1 100%;
+    height: 122px;
+    padding: 15px;
+    margin-bottom: 23px;
+    resize: none;
+  }
+  &__button {
+    flex: 0 1 214px;
+    @media (max-width:$tablet){
+      margin-left: auto;
+      @media (max-width:$mobileSmall){
+        flex: 1 1 100%;
+      }
+    }
+  }
+
+
+}
+
+
+
+
+
+.policy {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 55px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    min-height: 28px; //?????
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 140%;
+    color: $whiteColor;
+    opacity: 0.4;
+    a {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+
+  &__information {
+    flex: 0 1 auto;
+  }
+  &__public-offer {
+    flex: 0 0 119px;
+    
+  }
+  &__privacy-policy {
+    flex: 0 0 201px;
+  }
+}
+
+//==================================================================================
+
+
+
+// Mobile
+@media (max-width: 767.98px) {
+  .policy {
+    &__container {
+      justify-content: start;
+      flex-wrap: wrap;
+    }
+    &__information {
+      width: 100%;
+      padding-bottom: 24px;
+    }
+    &__public-offer {
+      width: 50%;
+      
+    }
+    &__privacy-policy {
+      width: 50%;
+    }
+  }
+
+  .footer__wrapper {
+    flex-wrap: wrap;
+    column-gap: 150px;
+    margin-bottom: 242px;
+  }
+  .footer__subtitle--instagram {
+    margin-bottom: 56px;
+  }
+  .footer-contacts {
+    flex: 1 1 auto;
+  }
+  .form {
+    max-width: 100%;
+  }
+  .footer-question {
+    padding-top: 0;
+  }
+}
+
+.check-btn_group {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 100%;
+  flex-wrap: wrap;
+
+  .checkbox {
+    flex: 0 1 194px;
+    position: relative;
+    @media (max-width:$tablet){
+      flex: 1 1 100%;
+      margin-bottom: 32px;
+    }
+
+    &__label {
+      position: absolute;
+      top: -3px;
+      left: 20px;
+      span {
+        font-size: 12px;
+        line-height: 140%;
+        @media (max-width:$mobileSmall){
+            font-size: rem(11);
+        }
+      }
+    }
+  }
+/*   &__button {
+    margin-left: auto;
+    @media (max-width:$mobileSmall){
+       width: 100%; 
+    }
+  } */
+}

@@ -1,0 +1,59 @@
+.get {
+  padding-top: 180px;
+  @media (max-width:$tablet){
+    padding-top: 80px;
+  }
+  &__title {
+    margin-bottom: 42px;
+  }
+}
+
+.get .response-card {
+  position: relative;
+}
+
+.get .response-card__descriptions a {
+  color: $footerBackgroundColor;
+  text-decoration: underline;
+  &:hover {
+    color: #75110D;
+    
+  }
+}
+
+.get .response-card__image {
+  position: relative;
+  &::after {
+    content: "";
+    background: url(../img/concern-love.svg) no-repeat;
+    position: absolute;
+    width: 25px;
+    height: 37px;
+    top: 0px;
+    left: 0px;
+  }
+/*   &::after {
+    content: "";
+    background: url(../img/get/arrow.svg) no-repeat;
+    position: absolute;
+    width: 25px;
+    height: 37px;
+    top: 0px;
+    left: 0px;
+  } */
+
+
+}
+.get .response-card__title {
+  position: relative;
+  &:not(:last-child::after) {
+      content: "";
+      background: url(../img/get/arrow.svg) no-repeat;
+      position: absolute;
+      width: 151px;
+      height: 17px;
+      top: -42px;
+      left: 103px;
+    
+  }
+}

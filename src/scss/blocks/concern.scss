@@ -1,0 +1,177 @@
+.concern {
+  position: relative;
+  background-color: #FFF4F3;
+  padding: 80px 0;
+  &::after{
+    content:'';
+    background: url(../img/concern-bgi.svg) center / auto 100% no-repeat;
+    position: absolute;
+    width: 676px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    @media (max-width:$tablet){
+      background-position: 79% 50%;
+    }
+  }
+  @media (max-width:$mobileSmall){
+     padding-bottom: 40px; 
+  }
+}
+.concern-block {
+  display: flex;
+  position: relative;
+  align-items: center;
+  z-index: 5;
+  @media (max-width:$tablet){
+    flex-wrap: wrap;
+  }
+  &__left {
+    position: relative;
+    flex: 0 0 50%;
+    padding-left: 47px;
+    padding-bottom: 185px;
+    z-index: 10;
+    @media (max-width:$pc){
+      padding-left: 0;
+    }
+    @media (max-width:$tablet){
+      flex: 1 1 100%;
+      order: 2;
+    }
+    @media (max-width:$mobileSmall){
+      padding-bottom: 123px; 
+    }
+  }
+  &__image {
+    z-index: 3;
+    position: relative;
+    @media (max-width:$mobile){
+      max-width: 400px;
+      max-height: 474px;
+      img {
+        width: 100%;
+      }
+    }
+    @media (max-width:$mobileSmall){
+      width: 262px;
+    }
+    &::after{
+      content:'';
+      background: url(../img/concern-dog.svg) no-repeat;
+      position: absolute;
+      width: 150px;
+      height: 172px;
+      bottom: -80px;
+      left: -90px;
+      @media (max-width:$mobile){
+        left: -15px; 
+      }
+      @media (max-width:$mobileSmall){
+         background-size: 80%;
+         left: 10px;
+         bottom: -110px;
+      }
+    }
+    &--small {
+      position: absolute;
+      left: 238px;
+      top: 356px;
+      z-index: 5;
+      &::after{
+        content:'';
+        background: url(../img/concern-hart.svg) no-repeat;
+        position: absolute;
+        width: 95px;
+        height: 100px;
+        top: -68px;
+        left: 221px;
+        @media (max-width:$mobile){
+          left: 154px; 
+        }
+        @media (max-width:$mobileSmall){
+          left: 48px;
+          top: -73px;
+          background-size: 100%;
+        }
+      }
+      @media (max-width:$pc){
+        left: 144px;
+      }
+      @media (max-width:$tablet){
+        left: 310px;
+        top: 358px;
+      }
+      @media (max-width:$mobile){
+        width: 302px;
+        left: 185px;
+        top: 333px;
+        img {
+          width: 100%;
+        }
+      }
+      @media (max-width:$mobileSmall){
+        width: 202px;
+        left: 160px;
+        top: 216px;
+      }
+    }
+
+  }
+  &__right {
+    flex: 0 1 50%;
+    padding-left: 47px;
+    padding-right: 28px;
+    @media (max-width:$pc){
+      padding-left: 50px;
+      padding-right: 0;
+    }
+    @media (max-width:$tablet){
+      flex: 1 1 100%;
+      padding: 0;
+      order: 1;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    max-width: 408px;
+    @media (max-width:$mobile){
+      max-width: 298px;
+    }
+    &::after{
+      content:'';
+      background: url(../img/concern-love.svg) no-repeat;
+      position: absolute;
+      width: 25px;
+      height: 37px;
+      top: 63px;
+      left: 1045px;
+      @media (max-width:$pc){
+        top: 36px;
+        left: 936px; 
+      }
+      @media (max-width:$tablet){
+        left: 395px;
+      }
+      @media (max-width:$mobile){
+        transform: rotate(-90deg);
+        left: 285px;
+        top: 39px;
+        
+      }
+    }
+  }
+
+  &__description {
+    color: #434242;
+    @media (max-width:$tablet){
+      margin-bottom: 70px;
+    }
+    line-height: 130%;
+    p:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
