@@ -19,13 +19,13 @@
       <div class="header__menu menu">
         <nav class="menu__body">
           <ul class="menu__list">
-            <li class="menu__item"><a data-goto=".barf" href="#" class="menu__link">BARF</a></li>
-            <li class="menu__item"><a data-goto=".ration" href="#" class="menu__link">Рационы</a></li>
-            <li class="menu__item"><a data-goto=".why" href="#" class="menu__link">ZOOOV</a></li>
-            <li class="menu__item"><a data-goto=".concern" href="#" class="menu__link">О нас</a></li>
-            <li class="menu__item"><a data-goto=".get" href="#" class="menu__link">Доставка</a></li>
-            <li class="menu__item"><a data-goto=".spoiler" href="#" class="menu__link">FAQ</a></li>
-            <li class="menu__item"><a data-goto=".footer"href="#" class="menu__link">Контакты</a></li>
+            <li class="menu__item"><a data-goto=".barf" href="#" class="menu__link smooth-scrolling">BARF</a></li>
+            <li class="menu__item"><a data-goto=".ration" href="#" class="menu__link smooth-scrolling">Рационы</a></li>
+            <li class="menu__item"><a data-goto=".why" href="#" class="menu__link smooth-scrolling">ZOOOV</a></li>
+            <li class="menu__item"><a data-goto=".concern" href="#" class="menu__link smooth-scrolling">О нас</a></li>
+            <li class="menu__item"><a data-goto=".get" href="#" class="menu__link smooth-scrolling">Доставка</a></li>
+            <li class="menu__item"><a data-goto=".spoiler" href="#" class="menu__link smooth-scrolling">FAQ</a></li>
+            <li class="menu__item"><a data-goto=".footer"href="#" class="menu__link smooth-scrolling">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -39,15 +39,15 @@
       <section class="main-page">
         <div class="main-page__container">
           <div class="main-page__wrapper">
-            <h2 class="main-page__title title title--main">Питание, которое полюбит ваш хвостик</h2>
+            <h2 class="main-page__title title title--main _anim-items">Питание, которое полюбит ваш хвостик</h2>
             <div class="main-page__subtitle">Натуральные рационы питания для собак по системе BARF</div>
-            <button class="main-page__button button button--red">Выбрать рацион</button>
+            <a data-goto=".ration" href="#" class="main-page__button button button--red smooth-scrolling">Выбрать рацион</a>
           </div>
         </div>
       </section>
-      <section class="barf _scr-item">
+      <section class="barf">
         <div class="barf__container">
-          <div class="barf__wrapper wrapper-barf">
+          <div class="barf__wrapper wrapper-barf _anim-items">
             <div class="wrapper-barf__left left-wrapper">
               <h2 class="title left-wrapper__title">Что такое BARF</h2>
               <div class="left-wrapper__description">BARF (Biologically Appropriate Raw Food) — система питания собак,
@@ -67,7 +67,7 @@
             </div>
           </div>
 
-          <div class="barf-list swiper">
+          <div class="barf-list swiper _anim-items">
             <div class="barf-list__wrapper swiper-wrapper">
               <div class="barf-list__left barf-list__slide swiper-slide">
                 <div class="barf-list__title">Для взрослых</div>
@@ -115,7 +115,7 @@
       </section>
       <section class="ration">
         <div class="ration__container">
-          <div class="ration__title-group title-group">
+          <div class="ration__title-group title-group _anim-items">
             <h2 class="title-group__title title">Рационы ZOOOV</h2>
             <div class="title-group__description">Система питания взрослой собаки не подойдет для щенка, поэтому мы
               создали разные
@@ -126,7 +126,7 @@
           <!-- =========================== TABS =========================== -->
 
 
-          <div data-tabs class="ration-tabs tabs _scr-item">
+          <div data-tabs class="ration-tabs tabs _anim-items">
             <nav class="ration-tabs__navigation">
               <button class="ration-tabs__title ration-tabs__title-left button _tabs-item _tab-active" type="button">Для
                 щенков</button>
@@ -240,23 +240,18 @@
 
             </div>
 
+          </div>
+      <!-- ===========================  =========================== -->
+          <div class="ration-calculate _anim-items">
+            <div class="ration-calculate__title">Рассчитаем в каком количестве нужно кормить вашего питомца рационами
+              Zooov</div>
 
-
-
-
-            <!-- ===========================  =========================== -->
-
-            <div class="ration-calculate">
-              <div class="ration-calculate__title">Рассчитаем в каком количестве нужно кормить вашего питомца рационами
-                Zooov</div>
-
-              <a type="submit" href="#popup-calculate" class="_popup-link button button--red ration-calculate__button">Расчитать</a>
-            </div>
+            <a type="submit" href="#popup-calculate" class="_popup-link button button--red ration-calculate__button">Расчитать</a>
           </div>
       </section>
       <!-- =========================== WHY =========================== -->
 
-      <section class="why _scr-item">
+      <section class="why _anim-items">
         <div class="why__container">
           <h2 class="title why__title">Почему ZOOOV</h2>
           <div class="why__responses responses-cards">
@@ -289,7 +284,7 @@
       </section>
       <!-- ===========================  =========================== -->
 
-      <section class="concern _scr-item">
+      <section class="concern _anim-items">
         <div class="concern__container">
           <div class="concern-block">
             <div class="concern-block__left">
@@ -320,7 +315,7 @@
         </div>
       </section>
         <!-- =========================== GET =========================== -->
-      <section class="get _scr-item">
+      <section class="get _anim-items">
         <div class="get__container">
           <h2 class="title get__title">Почему ZOOOV</h2>
           <div class="get__responses responses-cards">
@@ -354,13 +349,13 @@
       </section>
       <!-- =========================== SPOLLER =========================== -->
 
-      <section class="spoiler _scr-item">
+      <section class="spoiler _anim-items">
         <div class="spoiler__container">
           <div class="spoiler-block">
             <div class="spoiler-block__left">
-              <h2 class="title spoiler-block__title">Частые вопросы</h2>
+              <h2 class="title spoiler-block__title _anim-items">Частые вопросы</h2>
             </div>
-            <div data-spollers class="spoiler-block__right spollers">
+            <div data-spollers class="spoiler-block__right spollers _anim-items">
               <div class="spoiler-block__item spollers__item">
                 <button class="spoiler-block__button spollers__title" data-spoller type="button" tabindex="-1">Не опасны
                   ли бактерии, которые находятся в сыром мясе?</button>
@@ -389,7 +384,7 @@
                   всем видам бактерий. Рацион BARF как раз укрепит иммунитет вашей собаки и защитит ее от влияния
                   бактерий, которые находятся на улице или даже в вашем доме.</div>
               </div>
-              <div class="spoiler-block__item spollers__item spollers__title">
+              <div class="spoiler-block__item spollers__item">
                 <button class="spoiler-block__button" data-spoller type="button">Могу ли я сам составить для своей
                   собаки рацион по системе BARF?</button>
                 <div class="spoiler-block__text spollers__body">У здоровых собак отличная иммунная система, готовая ко
@@ -422,7 +417,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer _anim-items">
   <div class="footer__container">
     <div class="footer__wrapper">
       <div class="footer-contacts">
